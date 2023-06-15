@@ -15,7 +15,7 @@ const Form = () => {
         title,desc
       }
     try{
-      const res=await axios.post("/create",newTask);
+      const res=await axios.post("https://mcs-1q63.onrender.com/create",newTask);
       window.location.replace("/");
     }
     catch(err){

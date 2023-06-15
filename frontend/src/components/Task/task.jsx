@@ -12,7 +12,7 @@ const Task = ({ task }) => {
   const [error,setError]=useState(false);
   const handleDelete = async () => {
     try {
-      await axios.delete(`/delete/${task._id}`);
+      await axios.delete(`https://mcs-1q63.onrender.com/delete/${task._id}`);
       window.location.reload();
     } catch (err) {
       console.log(err);
@@ -24,7 +24,7 @@ const Task = ({ task }) => {
       return;
     }
     try {
-      axios.put(`/update/${task._id}`, {
+      axios.put(`https://mcs-1q63.onrender.com/update/${task._id}`, {
         title,
         desc,
         completed,

@@ -12,7 +12,7 @@ const Singletask = () => {
   const [task, settask] = useState({});
   useEffect(()=>{
     const gettask=async()=>{
-      const res=await axios.get(`/tasks/${path}`);
+      const res=await axios.get(`https://mcs-1q63.onrender.com/tasks/${path}`);
       settask(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
