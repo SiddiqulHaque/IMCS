@@ -15,7 +15,7 @@ mongoose
   })
   .then(console.log("Connected to MONGODB"))
   .catch((err) => console.log(err)); 
-app.use("/api",routes);
+app.use("/",routes);
 app.listen(5000,()=>{
     console.log("Server is up and running");
 })
