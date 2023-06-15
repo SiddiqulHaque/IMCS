@@ -1,0 +1,45 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rgb(20, 162, 114); */
+    margin: 70px 300px;
+    border-radius: 7px;
+    flex-direction: column;
+}
+@media screen and (max-width:760px){
+    .form{
+        /* width: 80vw; */
+        border: none;
+    }
+    .create-input{
+        width: 80vw;
+    }
+}
+.create-form{
+    display: flex;
+    flex-direction: column;
+}
+.create-label{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.create-input{
+    width: 600px;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid rgb(20, 162, 114) ;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.create-btn{
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color:rgb(20, 162, 114) ;
+    border: none;
+    margin: 10px auto;
+    border-radius: 6px;
+    cursor: pointer;
+}
