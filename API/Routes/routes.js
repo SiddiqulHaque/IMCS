@@ -1,7 +1,6 @@
 const router=require("express").Router();
 const Task=require("../model/task");
 
-
 router.post("/create",async(req,res)=>{
     try {
         const newTask=new Task({

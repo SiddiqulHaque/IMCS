@@ -12,7 +12,7 @@ const Home = () => {
   const [tasks, setTasks] = useState([]);
   useEffect(() => {
     const fetchtasks = async () => {
-      const res = await axios.get("/tasks");
+      const res = await axios.get("https://mcs-1q63.onrender.com/tasks");
       setTasks(res.data);
     };
     fetchtasks();
